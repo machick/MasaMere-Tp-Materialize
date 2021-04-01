@@ -1,2 +1,2 @@
-# MasaMere-Tp-Materialize.github.io
-https://machick.github.io/MasaMere-Tp-Materialize.github.io/
+# MasaMere-Tp-Materialize
+https://machick.github.io/MasaMere-Tp-Materialize/
