@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pedidos.css">
+  <link rel="stylesheet" href="css/tarjeta.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/pedidos.js"></script>
+  <script src="js/tarjeta.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <section class="p-5">
+      <div class="container">
+        <nav class="white text-black">
+          <div class="nav-wrapper">
+            <a href="inicio.html" class="brand-logo"><img src="img/logo.png"></a>
+
+            <a href="inicio.html" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons text-primary">menu</i>
+            </a>
+
+            <ul class="right hide-on-med-and-down ">
+              <li><a href="inicio.html">Inicio</a></li>
+              <li><a href="pedidos.html" class="active">Pedidos</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="sucursales.html">Sucursales</a></li>
+              <li><a href="elaboracion.html">Elaboracion</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="pedidos.html">Pedidos</a></li>
+      <li><a href="productos.html" class="active">Productos</a></li>
+      <li><a href="sucursales.html">Sucursales</a></li>
+      <li><a href="elaboracion.html">Elaboracion</a></li>
+    </ul>
+  </header>
+  <main>
+    <section id="productos">
+      <div class="container gradient p-5 center-align white-text">
+        <h2 class="titulos-principal">Pedidos</h2>
+        <h5>¡Armá tu pedido en tres simples pasos!</h5>
+      </div>
+    </section>
+
+
+
+    <div class="col s6">
+      <div class="card">
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab"><a href="#credito">Crédito</a></li>
+            <li class="tab"><a href="#debito">Débito</a></li>
+
+          </ul>
+        </div>
+
+        <div class="card-content">
+
+          <div id="credito">
+            <div class="section container containerTarjetas">
+              <div class="row uno">
+                <form action="gracias.html" class="col s12">
+                  <div class="row card-panel s6">
+
+                    <div class="input-field col s12">
+                      <input type="text" id="nTitular" class="validate" required>
+                      <label for="nTitular">* Nombre del Titular</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                      <input type="number" id="codigo" class="validate" required>
+                      <label for="codigo">* Código de Seguridad</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input type="number" id="vencimiento" class="validate" required>
+                      <label for="vencimiento">* Vencimiento</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                      <input type="number" id="nTarjeta" class="validate" required>
+                      <label for="nTarjeta" *> *Número de la Tarjeta</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                      <select>
+                        <option value="" disabled selected>* Cuotas</option>
+                        <option value="1">1</option>
+                        <option value="2">3</option>
+                        <option value="3">6</option>
+                      </select>
+                      <label></label>
+                    </div>
+
+
+
+
+
+                    <div>* Campos obligatorios</div>
+                    <a id="detalle-btn" type="submit" href="confirmar.html" style="margin-top:20px">Volver</a>
+
+                    <button id="detalle-btn" type="submit">Finalizar</button>
+
+                  </div>
+                </form>
+
+
+              </div>
+              <div class="dos espacio">
+                <div class="contendor3 sombra">
+                  <p class="datosT">Datos ingresados</p>
+                  <div> Nombre titular: <span class="suerte1"> </span>
+                  </div>
+                  <div>Código: <span class="suerte2"> </span></div>
+                  <div>Vencimiento: <span class="suerte3"> </span></div>
+                  <div>Número tarjeta: <span class="suerte4"> </span></div>
+                  <div>Cuotas: <span class="suerte5"> </span></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="debito">
+            <div class="section container containerTarjetas">
+              <div class="row dos">
+                <form action="confirmar.html" class="col s12">
+                  <div class="row card-panel">
+
+                    <div class="input-field col s6">
+                      <input type="text" id="nTitularD" class="validate" required>
+                      <label for="nTitularD">* Nombre del Titular</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                      <input type="number" id="codigoD" class="validate" required>
+                      <label for="codigoD">* Código de Seguridad</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                      <input type="number" id="vencimientoD" class="validate" required>
+                      <label for="vencimientoD">* Vencimiento</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                      <input type="number" id="nTarjetaD" class="validate">
+                      <label for="nTarjetaD">* Número de la Tarjeta</label>
+                    </div>
+
+
+
+
+
+                    <div>*Campos obligatorios</div>
+                  
+                    <a id="detalle-btn" type="submit" href="confirmar.html" style="margin-top:20px">Volver</a>
+
+                    <button id="detalle-btn" type="submit">Finalizar</button>
+
+                  </div>
+                </form>
+
+              </div>
+
+
+              <div class="dos espacio">
+                <div class="contendor3 sombra">
+                  <p class="datosT">Datos ingresados</p>
+                  <div> Nombre titular: <span class="suerteD1"> </span>
+                  </div>
+                  <div>Número: <span class="suerteD2"> </span></div>
+                  <div>Piso: <span class="suerteD3"> </span></div>
+                  <div>Depto: <span class="suerteD4"> </span></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!---
+        
+    -->
+
+  </main>
+
+  <footer style="height: 120px;">
+    <div class="container" style="height: 100%;">
+      <a href="#" style="height: 100%;"><img src="img/wsp.jpg" style="height: 60%;"></a>
+      <a href="#" style="height: 100%;"><img src="img/fb.jpg" style="height: 60%;"></a>
+      <a href="#" style="height: 100%;"><img src="img/ig1.jpg" style="height: 60%;"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

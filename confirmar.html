@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pedidos.css">
+    <link rel="stylesheet" href="css/domicilio.css">
+    <link rel="stylesheet" href="css/confirmar.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/confirmar.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="p-5">
+            <div class="container">
+                <nav class="white text-black">
+                    <div class="nav-wrapper">
+                        <a href="inicio.html" class="brand-logo"><img src="img/logo.png"></a>
+
+                        <a href="inicio.html" class="sidenav-trigger" data-target="mobile-nav">
+                            <i class="material-icons text-primary">menu</i>
+                        </a>
+
+                        <ul class="right hide-on-med-and-down ">
+                            <li><a href="inicio.html">Inicio</a></li>
+                            <li><a href="pedidos.html" class="active">Pedidos</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="sucursales.html">Sucursales</a></li>
+                            <li><a href="elaboracion.html">Elaboracion</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="productos.html" class="active">Productos</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="elaboracion.html">Elaboracion</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="productos">
+            <div class="container gradient p-5 center-align white-text">
+                <h2 class="titulos-principal">Pedidos</h2>
+            <h5 >¡Armá tu pedido en tres simples pasos!</h5>
+            </div>
+        </section>
+      
+      
+        <div class="section container" id="bloque">
+            
+            <div class="row rowAdentro">
+                <form action="tarjeta.html" class="col s12">
+                    <div class="row card-panel">
+                        <div class=" col s12">
+                            <h4 style="text-align: center;">Confirmá si los campos son los correctos</h4>
+                            <p style="text-decoration:underline;">Tu pedido:</p>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <p>Pan</p>
+                            <p id="pan" class="validate valid"></p>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <p>Hamburguesa</p>
+                            <p id="hamburguesa"  class="validate valid"></p>                          
+                         </div>
+
+                        <div class="input-field col s12">
+                            <p>Hojas</p>
+                            <p id="hojas" class="validate valid"></p>
+                        </div>
+                        <div class=" col s12">
+                            <p  style="margin-top: 25px; text-decoration:underline;">Tu domicilio:</p>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <p>Dirección:</p>
+                            <input type="text" id="calle" class="white-text validate valid" required>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <p>Piso / Dpto</p>
+                            <input type="text" id="piso" class="white-text validate valid">
+                        </div>
+                        
+                        <div class="input-field col s12">
+                            <p>Localidad</p>
+                            <input type="text" id="localidad" class="white-text validate valid" required>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <p>Email</p>
+                            <input type="text" id="numero" class="white-text validate valid" required>
+                        </div>
+
+                        
+
+                        
+                    <button id="detalle-btn" type="submit" style="margin-top:20px">Confirmar</button>  
+
+                    </div>
+
+                </form>
+
+            </div>
+            <img class="recurso" width="50%" src="img/Recurso 2.png">
+        </div>
+    </main>
+
+    <footer style="height: 120px;">
+        <div class="container" style="height: 100%;">
+            <a href="#" style="height: 100%;"><img src="img/wsp.jpg" style="height: 60%;"></a>
+            <a href="#" style="height: 100%;"><img src="img/fb.jpg" style="height: 60%;"></a>
+            <a href="#" style="height: 100%;"><img src="img/ig1.jpg" style="height: 60%;"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

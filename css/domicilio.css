@@ -1,0 +1,90 @@
+
+.btn{
+    background-color: rgb(49, 202, 49);
+    color: white;
+    margin-top: 1em;
+}
+
+a{
+    color: white;
+}
+
+
+
+/*
+.uno{
+    width: 50%;
+    margin: auto;
+    background-image: url(../img/fondo.png);
+    color: white;
+    background-size:cover;
+}
+
+.dos{
+    width: 40%;
+    padding: 4em;
+
+}
+
+.contendor3{
+    background-image: url(../img/fondo.png);
+    color: white;
+    justify-content: center;
+    background-size:cover;
+    padding: 2em;
+}
+
+span{
+    font-weight: 700;
+}
+
+*/
+
+
+.sombra{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)
+}
+
+.contenedor2{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.uno{
+    width: 40%;
+    margin: 0;
+}
+.dos{
+    width: 30%;
+    
+}
+
+.contendor3{
+    padding: 2em;
+   
+    margin: 2em;
+}
+
+.datosT{
+    font-size: 30px;
+    margin: 0;
+}
+
+span, p{
+    font-size: 20px;
+    margin: 0;
+    margin-left: 0.5em;
+}
+
+form .card-panel{
+    color: white;
+    background-size:cover;
+    background-image: url(../img/fondo.png);
+
+}
+
+input, label, .input-field, .input-field>label {
+    color: white;
+}
+

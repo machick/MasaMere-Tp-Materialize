@@ -1,0 +1,78 @@
+.container h6{
+    font-size: 1.2rem;
+}
+.w-100{
+    width: 100%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-primary {    
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+#ubicacion-titulo h2{
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+.text-info{
+    color: #F8921F;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.imagen-container{ /* no se usa ver abajo  */
+    height:25rem; 
+    width: 100%;
+}
+.imagen-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.imagen-container div{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.mt-3{margin-top: 60px;}
+
+.flex h6{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.flex h7{font-weight: 700;}
+
+.ubicaciones-info{
+    display: flex;
+    justify-content: space-between;
+}
+.text-container{
+    
+    margin: auto;
+}
+.titulos-elaboracion{
+    font-family: brushield;
+    font-size: 5rem;
+    color: #FF405A;
+    letter-spacing: 0.5rem;
+    
+}
+.text-elaboracion{
+   font-size: 1.75rem;
+}
+.imagen-container{  /* esaa */
+    height:25rem;
+    width: 90%;
+    margin: auto;
+}
+#elaboracion-nombres{
+    font-size: 3rem;
+}

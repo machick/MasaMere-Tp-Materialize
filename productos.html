@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masamare</title>
+ 
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/productos.css">
+ <link rel="stylesheet" href="css/inicio.css">
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="js/js.js"></script>
+
+</head>
+<body>
+
+    <section class="p-5">
+    <div class="container">    
+        <nav class="white text-black">
+            <div class="nav-wrapper">
+                <a href="inicio.html" class="brand-logo"><img src="img/logo.png"></a>
+        
+                <a href="inicio.html" class="sidenav-trigger" data-target="mobile-nav">
+                    <i class="material-icons text-primary">menu</i>
+                </a>
+        
+             <ul class="right hide-on-med-and-down ">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="productos.html" class="active" >Productos</a></li>
+                    <li><a href="sucursales.html" >Sucursales</a></li>
+                    <li><a href="elaboracion.html" >Elaboracion</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>  
+    </section>
+    
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="sucursales.html">Sucursales</a></li>
+        <li><a href="elaboracion.html">Elaboracion</a></li>
+    </ul>
+    <section id="productos">
+        <div class="container gradient p-5 center-align white-text">
+            <h2 class="titulos-principal">Productos</h2>
+            <h5 >¡Nuestros mejores panes de masa madre<br>
+            junto con deliciosos menus para que disfrutes!</h5>
+        </div>
+        <div class="container center-align red-text">
+            <h2 id="productos-nombres" class="text-primary">SANDWICHS | HAMBURGUESAS | PIZZAS<br>PANES | EMPANADAS | PASTELERIA</h2>
+        </div>
+    </section>
+    
+    <section id="sandwiches">
+        <div class="container">
+            <h6 class="red-text">SANDWICHS</h6>
+            <div class="row">
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (19).jpg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-1" onclick="desactivar(1)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(1)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (12).jpg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-2" onclick="desactivar(2)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(2)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (13).jpg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-3" onclick="desactivar(3)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(3)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="hamburguesas">
+        <div class="container">
+            <h6 class="red-text">HAMBURGUESAS</h6>
+            <div class="row">
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (1).jpeg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-4" onclick="desactivar(4)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(4)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (23).jpg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-5" onclick="desactivar(5)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(5)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (2).jpeg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-6" onclick="desactivar(6)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(6)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+           </div>  
+
+    </section>
+    
+    <section id="pizzas">
+        <div class="container">
+            <h6 class="red-text">PIZZAS</h6>
+            <div class="row">
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (4).jpeg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-7" onclick="desactivar(7)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(7)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (5).jpeg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-8" onclick="desactivar(8)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(8)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4 xl4">
+                    <div class="card productos-img-container">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="img/img (9).jpg">
+                            <div class="btn-container">
+                                <button class="activator" id="detalle-btn" name="btn-9" onclick="desactivar(9)">Ver detalle</button>
+                            </div>
+                        </div>
+                        <div class="card-reveal text-primary">
+                            <span class="card-title text-darken-4" onclick="activar(9)">SUPER MARINERO<i class="material-icons right">close</i></span>
+                            <p class="white-text card-text-rem">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <div class="info">
+                                <p class="white-text left">Aderezos a eleccion</p>
+                                <a href="#" class="comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <footer style="height: 120px;">
+        <div class="container"style="height: 100%;">
+            <a href="#" style="height: 100%;"><img src="img/img (18).png"style="height: 60%;"></a>
+            <a href="#"style="height: 100%;"><img src="img/img (28).png"style="height: 60%;"></a>
+            <a href="#"style="height: 100%;"><img src="img/ig.png"style="height: 60%;"></a>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

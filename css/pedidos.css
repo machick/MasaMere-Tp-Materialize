@@ -1,0 +1,89 @@
+.p-5{
+    margin-bottom: 0;
+}
+
+#bloque{
+display: flex;
+justify-content: center;
+}
+.espacio{
+  margin-left: 2em;
+}
+
+
+.row { 
+    background-image: url(../img/fondo.png);
+    color: white;
+    justify-content: center;
+    background-size:cover;
+}
+
+
+  /* label color
+  .input-field label {
+    color: #fff;
+  } */
+
+   /* valid color */
+   .input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+
+  .btn{
+    background-color: rgb(49, 202, 49);
+    margin-top: 1em;
+  
+}
+#detalle-btn{
+  background:#97B538;
+  color: white;
+  padding: 8px 15px 10px 15px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+}
+.select-wrapper input.select-dropdown{
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.dropdown-content li>span{
+color:  #000;
+}
+
+.input-field{
+  margin: 0;
+  margin-top: 1em;
+}
+
+.letra{
+  color: #fff;
+}
+
+.mas{
+  font-weight: 900;
+}
+.recurso{
+  height: 100%;
+}
+
+@media screen and (max-width:47em){
+  #bloque{
+      display: block;
+
+    }
+    .recurso{
+        width: 100%;
+        margin: auto;
+
+    }
+   
+   
+
+}
+

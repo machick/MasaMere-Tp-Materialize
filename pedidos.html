@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pedidos.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/pedidos.js"></script>
+  <script src="js/validacion.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <section class="p-5">
+      <div class="container">
+        <nav class="white text-black">
+          <div class="nav-wrapper">
+            <a href="inicio.html" class="brand-logo"><img src="img/logo.png"></a>
+
+            <a href="inicio.html" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons text-primary">menu</i>
+            </a>
+
+            <ul class="right hide-on-med-and-down ">
+              <li><a href="inicio.html">Inicio</a></li>
+              <li><a href="pedidos.html" class="active">Pedidos</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="sucursales.html">Sucursales</a></li>
+              <li><a href="elaboracion.html">Elaboracion</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="pedidos.html">Pedidos</a></li>
+      <li><a href="productos.html" class="active">Productos</a></li>
+      <li><a href="sucursales.html">Sucursales</a></li>
+      <li><a href="elaboracion.html">Elaboracion</a></li>
+    </ul>
+  </header>
+  <main>
+    <section id="productos">
+      <div class="container gradient p-5 center-align white-text">
+        <h2 class="titulos-principal">Pedidos</h2>
+        <h5>¡Armá tu pedido en tres simples pasos!</h5>
+      </div>
+    </section>
+    <section id="productos">
+      <div class="section container" id="bloque">
+        <div class="row" id="fondo">
+
+          <form action="domicilio.html" name="form" class="col s12" id="form">
+            
+            <div class="row card-panel">
+              <div class=" col s12">
+                <h4>Personalizá tu pedido:</h4>
+              </div>
+
+              <div class="input-field col s12">
+
+                <select name="pan" id="pan" class="select-pan">
+                  <option value="-1" disabled selected>El pan...</option>
+                  <option value="1">Blanco</option>
+                  <option value="2">Integral</option>
+                  <option value="3">Sin tacc</option>
+                </select>
+                <label></label>
+              </div>
+
+              <div class="input-field col s12">
+                <select name="hamburguesa" id="hamburguesa" class="select-hamburguesa">
+                  <option value="" disabled selected>La hamburguesa...</option>
+                  <option value="1">Carne</option>
+                  <option value="2">Pollo</option>
+                  <option value="3">Cerdo</option>
+                  <option value="4">Legumbres</option>
+                </select>
+                <label></label>
+              </div>
+
+              <div class="input-field col s12">
+                <select name="hojas" id="hojas" class="select-hojas">
+                  <option value="" disabled selected>Las hojas verdes...</option>
+                  <option class="negro" value="1">Rúcula</option>
+                  <option value="2">Lechuga</option>
+                  <option value="3">Mixto</option>
+                </select>
+                <label></label>
+              </div>
+
+              <div class="input-field col s12">
+                <select name="aderezo" multiple>
+                  <option value="" disabled selected>Los aderezos...</option>
+                  <option value="1">Mayonesa</option>
+                  <option value="2">Ketchup</option>
+                  <option value="3">Sabora</option>
+                </select>
+                <label></label>
+
+              </div>
+              <button id="detalle-btn" type="submit" style="margin-top:20px">Agregar otro pedido</button>
+
+              <button id="detalle-btn" type="submit" style="margin-top:20px">Siguiente</button>
+            </div>
+ 
+          </form>
+
+        </div>
+        <img class="recurso" width="50%" src="img/Recurso 2.png">
+      </div>
+
+    </section>
+
+
+
+
+
+    </div>
+    </div>
+
+  </main>
+
+  <footer style="height: 120px;">
+    <div class="container" style="height: 100%;">
+      <a href="#" style="height: 100%;"><img src="img/wsp.jpg" style="height: 60%;"></a>
+      <a href="#" style="height: 100%;"><img src="img/fb.jpg" style="height: 60%;"></a>
+      <a href="#" style="height: 100%;"><img src="img/ig1.jpg" style="height: 60%;"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

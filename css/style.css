@@ -1,0 +1,71 @@
+@font-face {
+    font-family: brushield;
+    src: url('../Fonts/Brushield.otf');
+}
+
+h5{
+  font-size: 1.7rem;
+font-family: calibri;
+font-weight: lighter;
+}
+
+nav .brand-logo img{
+    
+    margin-top: 25px;
+}
+
+.titulos-principal{
+    font-family: brushield;
+    font-size: 5rem;
+}
+.text-opacity{
+    opacity: 0.8;
+    font-size: 2rem;
+}
+
+.text-primary{
+    color: #F9405A;
+}
+.text-secundary{
+    color:#97B538;
+}
+.withe{
+    background-color: white !important;
+}
+nav{
+    padding-bottom: 130px;
+    margin-top: 15px;
+}
+nav .brand-logo{
+    height: 9rem;
+}
+nav .brand-logo img{
+    height: 100%;
+}
+nav ul li a{
+color: #F9405A;
+font-weight: bold;  
+text-transform: uppercase;
+letter-spacing: 1px;
+}  
+.active{
+   color: #97B538;
+}
+.p-5{
+   margin-top:20px;
+   margin-bottom: 20px;
+   padding:1px 0px 40px 0px;
+}
+.container h6{
+    font-weight:500;
+    font-size: 1.5rem;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav{
+   -webkit-box-shadow:none;
+   box-shadow:none;
+}
+.gradient{
+   background: rgba(249,64,90,0.9);
+   background: linear-gradient(97deg, rgba(249,64,90,0.9) 0%, rgba(248,146,31,0.9) 90%);
+}
